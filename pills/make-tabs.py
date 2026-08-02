@@ -52,9 +52,11 @@ SEG_N       = 32       # facets; half of this per end cap
 DW, DH, DS  = 3.0, 5.0, 0.8     # digit width, height, stroke thickness
 DGAP        = 0.6               # space between digits
 
-# 12 x 24 at these pitches is 230 x 228 mm, inside a Bambu P1S/X1 (256 x 256)
-# with ~13 mm of margin all round. Shrink COLS/ROWS for a smaller bed.
-COLS, ROWS      = 12, 24        # pills per plate
+# 11 x 24 at these pitches is 211 x 228 mm on a Bambu P1S/X1 (256 x 256). The
+# eleventh column rather than a twelfth is deliberate: two-filament printing
+# needs a purge tower beside the parts, and 12 columns left nowhere to put it.
+# That leaves ~45 mm of free width. Shrink COLS/ROWS for a smaller bed.
+COLS, ROWS      = 11, 24        # pills per plate
 PITCH_X         = 19.2          # 2.0 mm between pills lengthwise
 PITCH_Y         = 9.5           # 1.5 mm between rows
 SEED        = 20260802

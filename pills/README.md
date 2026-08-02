@@ -16,7 +16,7 @@ repeat 23 times.
 
 | file | |
 |---|---|
-| `tabs-plate-01.3mf` … `tabs-plate-08.3mf` | 288 pills each (last has 32) |
+| `tabs-plate-01.3mf` … `tabs-plate-08.3mf` | 264 pills each (last has 200) |
 | `tabs-plate-NN-base.stl` / `-digits.stl` | same plates as STL, if your slicer prefers it |
 | `manifest.csv` | which number is on which plate and slot, sorted by number |
 | `make-tabs.py` | regenerates everything; edit the constants at the top |
@@ -28,7 +28,9 @@ occupying only the top 0.6 mm). Same geometry, two filaments.
 
 ## Printing on a Bambu P1S
 
-Plates are **230 × 228 mm**, leaving ~13 mm of margin on the 256 × 256 bed.
+Plates are **211 × 228 mm** on the 256 × 256 bed. That leaves ~45 mm free in X,
+which is there on purpose: two-filament printing needs a **purge tower** beside
+the parts, and a twelfth column left nowhere to put it.
 
 1. **Import** `tabs-plate-01.3mf`. Two objects appear at identical coordinates,
    named `base` and `digits`.
@@ -110,7 +112,7 @@ height, so you never need to swap back.
 |---|---|
 | pills | 2048 across **8 plates** |
 | material | **~0.63 kg** PLA (0.31 g each) |
-| plate | 288 pills, ~88 g |
+| plate | 264 pills, ~81 g |
 | time | **~50 hours** total, roughly 7 h per plate |
 
 ---
@@ -120,8 +122,8 @@ height, so you never need to swap back.
 **Why a pill and not a disc.** A disc has to circumscribe the four-digit text
 block, so its corners are dead weight: 201 mm² versus 124 mm² for a stadium
 around the same text. The pill uses **39 % less material**, and its flat sides
-pack about twice as densely — 288 per plate instead of 144, so 8 plates instead
-of 15.
+pack about twice as densely — 264 per plate instead of 144, so 8 plates instead
+of 15, even after leaving a column's worth of bed clear for the purge tower.
 
 **Why a colour swap instead of embossed or engraved text.** Embossing adds
 material and engraving removes it, so `1111` and `8888` end up with different
@@ -142,7 +144,7 @@ rather than relying on variable-width extrusion.
 **Why the numbering is shuffled across plates.** Print quality drifts over a
 50-hour run — spool changes, nozzle wear, position on the plate, ambient
 temperature. Tabs printed together are physically a cohort. If plate 1 held
-0000–0287, that drift would line up with a contiguous block of the wordlist, and
+0000–0263, that drift would line up with a contiguous block of the wordlist, and
 any tendency of the bag to favour one cohort would favour one region of the
 vocabulary. Shuffling decorrelates physical variation from index. The shuffle
 uses a fixed seed, so the run is reproducible and auditable.
