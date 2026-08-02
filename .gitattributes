@@ -1,0 +1,4 @@
+# Binary payloads. Without this, a client with autocrlf enabled can mangle
+# them in transit and the slicer will reject a file that was fine at rest.
+*.stl  binary
+*.3mf  binary
