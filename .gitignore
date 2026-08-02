@@ -1,0 +1,15 @@
+# Dice logs are YOUR ROLLS. Never commit one -- a log from a real session is
+# your seed in a different notation.
+dice-log-*.txt
+*.log
+
+# Regenerable
+__pycache__/
+*.pyc
+
+# Third-party files. Kept locally for the air-gapped USB, but not redistributed:
+# Seed Tool is GPL-3.0, and users should fetch the signed release from source
+# rather than trust a copy vendored by a stranger. See README > Seed Tool.
+seedtool-*.html
+key.asc
+signature.txt
