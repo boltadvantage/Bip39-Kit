@@ -29,12 +29,32 @@ occupying only the top 0.6 mm). Same geometry, two filaments.
 
 Plates are **228 × 228 mm**, sized to leave ~14 mm margin on the 256 × 256 bed.
 
-1. **Import** `tabs-plate-01.3mf`. Two objects appear at identical coordinates.
+1. **Import** `tabs-plate-01.3mf`. Two objects appear at identical coordinates,
+   named `base` and `digits`.
 2. **Select both, then Assemble them into a single object.** They become two
    parts that move together.
 3. Assign the **`digits`** part to your second filament.
 4. Slice at **0.2 mm layer height**, 0.4 mm nozzle, **100 % infill**.
 5. No supports. Brim only if you get lifting.
+
+The 3MF is deliberately plain — no embedded materials or colour metadata, since
+that is the least portable corner of the format and slicers disagree about it.
+Assigning two filaments by hand is one click and always works.
+
+### If the 3MF won't import
+
+Generate STLs instead. They are not committed here because binary STL is roughly
+eight times the size of the compressed 3MF (~37 MB for the full set), but the
+generator will write them on demand:
+
+```
+./make-tabs.py --stl          # every plate, 3MF + two STLs each
+./make-tabs.py 1 --stl        # just plate 1
+```
+
+That gives `tabs-plate-01-base.stl` and `tabs-plate-01-digits.stl`. Import both,
+**do not move either**, and assign the digits file to your second filament. They
+share an origin, so they line up as long as nothing gets dragged or auto-arranged.
 
 > ### ⚠️ Do not use Auto Arrange
 > The two bodies are aligned by their coordinates, nothing else. Auto-arrange

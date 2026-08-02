@@ -134,24 +134,33 @@ def number(mesh, value, cx, cy, z0, z1):
 
 
 def write_3mf(path, bodies):
-    """bodies: [(name, colour, Mesh)] -> a 3MF the slicer opens as separate objects."""
-    parts = []
-    for n, (name, color, m) in enumerate(bodies):
-        verts = "".join(f'<vertex x="{x:.4f}" y="{y:.4f}" z="{z:.4f}"/>' for x, y, z in m.v)
-        tris = "".join(f'<triangle v1="{a}" v2="{b}" v3="{c}"/>' for a, b, c in m.t)
-        parts.append(f'<object id="{n + 2}" type="model" pid="1" pindex="{n}" name="{name}">'
-                     f'<mesh><vertices>{verts}</vertices>'
-                     f'<triangles>{tris}</triangles></mesh></object>')
-    items = "".join(f'<item objectid="{n + 2}"/>' for n in range(len(bodies)))
-    mats = "".join(f'<base name="{name}" displaycolor="{color}"/>'
-                   for name, color, _ in bodies)
+    """
+    bodies: [(name, colour, Mesh)] -> a deliberately plain 3MF.
 
-    model = ('<?xml version="1.0" encoding="UTF-8"?>'
+    No <basematerials>, and no pid/pindex on the objects. Colour metadata is the
+    least portable corner of the format and slicers differ on it; assigning the
+    two objects to filaments by hand takes one click and always works. Elements
+    are newline-separated rather than emitted as one multi-megabyte line, which
+    some XML readers handle badly.
+    """
+    parts = []
+    for n, (name, _color, m) in enumerate(bodies):
+        verts = "\n".join(f'   <vertex x="{x:.4f}" y="{y:.4f}" z="{z:.4f}"/>' for x, y, z in m.v)
+        tris = "\n".join(f'   <triangle v1="{a}" v2="{b}" v3="{c}"/>' for a, b, c in m.t)
+        parts.append(f' <object id="{n + 1}" type="model" name="{name}">\n'
+                     f'  <mesh>\n   <vertices>\n{verts}\n   </vertices>\n'
+                     f'   <triangles>\n{tris}\n   </triangles>\n  </mesh>\n </object>')
+    items = "\n".join(
+        f' <item objectid="{n + 1}" transform="1 0 0 0 1 0 0 0 1 0 0 0"/>'
+        for n in range(len(bodies)))
+
+    model = ('<?xml version="1.0" encoding="UTF-8"?>\n'
              '<model unit="millimeter" xml:lang="en-US" '
-             'xmlns="http://schemas.microsoft.com/3dmanufacturing/core/2015/02">'
-             f'<resources><basematerials id="1">{mats}</basematerials>'
-             f'{"".join(parts)}</resources>'
-             f'<build>{items}</build></model>')
+             'xmlns="http://schemas.microsoft.com/3dmanufacturing/core/2015/02">\n'
+             '<metadata name="Application">bip39-kit make-tabs.py</metadata>\n'
+             '<metadata name="Title">BIP39 numbered draw tabs</metadata>\n'
+             '<resources>\n' + "\n".join(parts) + '\n</resources>\n'
+             '<build>\n' + items + '\n</build>\n</model>\n')
 
     ctypes = ('<?xml version="1.0" encoding="UTF-8"?>'
               '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">'
@@ -176,6 +185,23 @@ def write_3mf(path, bodies):
             z.writestr(info, data)
 
 
+def write_stl(path, mesh):
+    """Binary STL fallback -- every slicer on earth reads this."""
+    import struct
+    with open(path, "wb") as f:
+        f.write(b"bip39-kit numbered draw tab".ljust(80, b"\0"))
+        f.write(struct.pack("<I", len(mesh.t)))
+        for a, b, c in mesh.t:
+            p, q, r = mesh.v[a], mesh.v[b], mesh.v[c]
+            ux, uy, uz = q[0] - p[0], q[1] - p[1], q[2] - p[2]
+            vx, vy, vz = r[0] - p[0], r[1] - p[1], r[2] - p[2]
+            nx, ny, nz = uy * vz - uz * vy, uz * vx - ux * vz, ux * vy - uy * vx
+            L = math.sqrt(nx * nx + ny * ny + nz * nz) or 1.0
+            f.write(struct.pack("<12f", nx / L, ny / L, nz / L,
+                                *p, *q, *r))
+            f.write(b"\0\0")
+
+
 def main():
     here = os.path.dirname(os.path.abspath(__file__))
     per_plate = COLS * ROWS
@@ -184,7 +210,9 @@ def main():
     order = list(range(2048))
     random.Random(SEED).shuffle(order)
 
-    only = int(sys.argv[1]) if len(sys.argv) > 1 else None
+    want_stl = "--stl" in sys.argv
+    nums = [a for a in sys.argv[1:] if a.isdigit()]
+    only = int(nums[0]) if nums else None
     manifest = []
 
     for p in range(plates):
@@ -201,11 +229,17 @@ def main():
             number(digits, value, cx, cy, THICK - DIGIT_DEPTH, THICK)
             manifest.append((p + 1, slot + 1, value))
 
-        path = os.path.join(here, f"tabs-plate-{p + 1:02d}.3mf")
+        stem = f"tabs-plate-{p + 1:02d}"
+        path = os.path.join(here, stem + ".3mf")
         write_3mf(path, [("base", COLOR_BASE, base), ("digits", COLOR_DIGITS, digits)])
-        print(f"  {os.path.basename(path)}  {len(chunk)} tabs  "
+        print(f"  {stem}.3mf  {len(chunk)} tabs  "
               f"{len(base.t) + len(digits.t):,} triangles  "
               f"{os.path.getsize(path) / 1024:.0f} KB")
+        if want_stl:
+            for name, mesh in (("base", base), ("digits", digits)):
+                sp = os.path.join(here, f"{stem}-{name}.stl")
+                write_stl(sp, mesh)
+                print(f"      {os.path.basename(sp)}  {os.path.getsize(sp) / 1024:.0f} KB")
 
     manifest.sort(key=lambda r: r[2])
     with open(os.path.join(here, "manifest.csv"), "w") as f:

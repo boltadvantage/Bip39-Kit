@@ -4,6 +4,7 @@ dice-log-*.txt
 *.log
 
 # Regenerable
+pills/*.stl
 __pycache__/
 *.pyc
 
