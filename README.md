@@ -1,5 +1,28 @@
 # BIP39 Seed Kit
 
+> # ⚠️ NEVER ENTER A SEED ON AN ONLINE DEVICE
+>
+> ### Not once. Not "just to check". Not for a second.
+>
+> **A seed phrase typed into an internet-connected device is compromised from
+> that moment on. Move the funds.** There is no undo, no "I closed the tab", no
+> "it was only a few words". This applies to Seed Tool, to this script, to any
+> wallet, to a text editor, to a search bar, to a chat window.
+>
+> - **Never use a hosted seed tool at a URL — not even to look.** Download the
+>   file, verify its signature, and open it from disk on a machine with no
+>   network hardware in it.
+> - **A browser tab is not an air gap.** Any installed extension can read what
+>   is on the page, including your words.
+> - **Your phone is an online device.** Don't photograph the screen. Don't
+>   photograph your paper. Don't type a single word into it.
+> - **Printers have memory** and many have WiFi. Handwrite seeds. Never print one.
+> - **"Offline for a minute" is still online.** Disabling WiFi in software is
+>   not the same as having no WiFi card.
+>
+> The only safe places for a seed are paper, metal, and a machine with its radios
+> physically removed. If you are not certain a device is air-gapped, it isn't.
+
 Tools for generating a Bitcoin seed phrase from **physical dice**, so the entropy
 never comes from a computer's random number generator.
 
@@ -100,6 +123,23 @@ That last roll is real entropy, not a formality — the 8 candidates differ in 3
 entropy bits and produce 8 completely different wallets. Write down which you chose.
 
 Total: **70 dice throws.** 23 throws of 3 dice, plus one final d8.
+
+---
+
+### Doing the checksum without a computer
+
+**Several signing devices can compute the final word themselves**, which is the
+safest route available — the seed never touches a general-purpose OS at all. Some
+also accept dice rolls directly, in which case you can skip this kit's computer
+step entirely: roll into the device and let it derive the whole seed.
+
+Look for a *"calculate final word"*, *"last word"*, or *dice entropy* feature.
+Devices known to offer some form of this include **Coldcard**, **SeedSigner**,
+and **Krux**. Feature names and menu paths move between firmware releases, so
+check your model's current documentation rather than trusting this list.
+
+If your device does it, prefer that over any laptop. A signing device has a tiny
+attack surface and no browser; a laptop has an operating system.
 
 ---
 

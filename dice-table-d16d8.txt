@@ -1,5 +1,6 @@
 BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 1 of 9
 2048 throws, one word each, no rerolls                this page: 1-1-1 .. 1-15-8
+       *** NEVER enter a seed on an online device -- air-gapped only ***
 
 1-1-1    abandon     1-4-11   also        1-8-5    attend      1-11-15  beyond
 1-1-2    ability     1-4-12   alter       1-8-6    attitude    1-11-16  bicycle
@@ -62,6 +63,7 @@ BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 1 of 9
 
 BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 2 of 9
 2048 throws, one word each, no rerolls              this page: 1-15-9 .. 2-13-16
+       *** NEVER enter a seed on an online device -- air-gapped only ***
 
 1-15-9   brown       2-3-3    cattle      2-6-13   clog        2-10-7   crazy
 1-15-10  brush       2-3-4    caught      2-6-14   close       2-10-8   cream
@@ -124,6 +126,7 @@ BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 2 of 9
 
 BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 3 of 9
 2048 throws, one word each, no rerolls               this page: 2-14-1 .. 3-12-8
+       *** NEVER enter a seed on an online device -- air-gapped only ***
 
 2-14-1   deliver     3-1-11   donor       3-5-5    embrace     3-8-15   exist
 2-14-2   demand      3-1-12   door        3-5-6    emerge      3-8-16   exit
@@ -186,6 +189,7 @@ BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 3 of 9
 
 BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 4 of 9
 2048 throws, one word each, no rerolls              this page: 3-12-9 .. 4-10-16
+       *** NEVER enter a seed on an online device -- air-gapped only ***
 
 3-12-9   finish      3-16-3   furnace     4-3-13   grain       4-7-7    holiday
 3-12-10  fire        3-16-4   fury        4-3-14   grant       4-7-8    hollow
@@ -248,6 +252,7 @@ BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 4 of 9
 
 BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 5 of 9
 2048 throws, one word each, no rerolls                this page: 4-11-1 .. 5-9-8
+       *** NEVER enter a seed on an online device -- air-gapped only ***
 
 4-11-1   inject      4-14-11  kitten      5-2-5    little      5-5-15   mean
 4-11-2   injury      4-14-12  kiwi        5-2-6    live        5-5-16   measure
@@ -310,6 +315,7 @@ BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 5 of 9
 
 BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 6 of 9
 2048 throws, one word each, no rerolls                this page: 5-9-9 .. 6-7-16
+       *** NEVER enter a seed on an online device -- air-gapped only ***
 
 5-9-9    much        5-13-3   obscure     5-16-13  panel       6-4-7    plug
 5-9-10   muffin      5-13-4   observe     5-16-14  panic       6-4-8    plunge
@@ -372,6 +378,7 @@ BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 6 of 9
 
 BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 7 of 9
 2048 throws, one word each, no rerolls                 this page: 6-8-1 .. 7-6-8
+       *** NEVER enter a seed on an online device -- air-gapped only ***
 
 6-8-1    puppy       6-11-11  relief      6-15-5   route       7-2-15   sense
 6-8-2    purchase    6-11-12  rely        6-15-6   royal       7-2-16   sentence
@@ -434,6 +441,7 @@ BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 7 of 9
 
 BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 8 of 9
 2048 throws, one word each, no rerolls                this page: 7-6-9 .. 8-4-16
+       *** NEVER enter a seed on an online device -- air-gapped only ***
 
 7-6-9    slam        7-10-3   spoil       7-13-13  sunset      8-1-7    this
 7-6-10   sleep       7-10-4   sponsor     7-13-14  super       8-1-8    thought
@@ -496,6 +504,7 @@ BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 8 of 9
 
 BIP39 dice table -- throw d8 + d16 + d16, read left to right         page 9 of 9
 2048 throws, one word each, no rerolls               this page: 8-5-1 .. 8-16-16
+       *** NEVER enter a seed on an online device -- air-gapped only ***
 
 8-5-1    trend       8-8-1    unlock      8-11-1   village     8-14-1   wheel
 8-5-2    trial       8-8-2    until       8-11-2   vintage     8-14-2   when

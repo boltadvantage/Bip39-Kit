@@ -608,6 +608,8 @@ def dice_table(words, mode, path, cols=4, rows=58):
                             (note, f"this page: {chunk[0][0]} .. {chunk[-1][0]}")):
             gap = max(2, roww - len(left) - len(right))
             lines.append(left + " " * gap + right)
+        warn = "*** NEVER enter a seed on an online device -- air-gapped only ***"
+        lines.append(warn.center(roww).rstrip())
         lines.append("")
 
         height = -(-len(chunk) // cols)
@@ -765,6 +767,11 @@ def main():
         print(f"{len(cands)} valid final words -- roll 1d{len(cands)} and take that line:\n")
         for i, w in enumerate(cands, 1):
             print(f"  {i:>3}  {w}")
+        print("\n  !! You just typed 23 words of a seed into this machine.", file=sys.stderr)
+        print("     If it has network hardware in it, treat this seed as burned", file=sys.stderr)
+        print("     and start over on an air-gapped one. Some signing devices can", file=sys.stderr)
+        print("     do this step for you -- see README > checksum without a computer.",
+              file=sys.stderr)
     elif cmd == "table":
         mode = sys.argv[2] if len(sys.argv) > 2 else "d16d8"
         if mode not in PATTERNS and mode != "d6":

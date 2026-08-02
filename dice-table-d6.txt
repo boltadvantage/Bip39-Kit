@@ -1,5 +1,6 @@
 BIP39 dice table -- throw 5d6, read left to right    page 1 of 45
 1632 of 7776 throws say (reroll)  this page: 1-1-1-1-1 .. 1-1-5-5-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 1-1-1-1-1  abandon     1-1-2-4-5  also        1-1-4-2-3  attend
 1-1-1-1-2  ability     1-1-2-4-6  alter       1-1-4-2-4  attitude
@@ -62,6 +63,7 @@ BIP39 dice table -- throw 5d6, read left to right    page 1 of 45
 
 BIP39 dice table -- throw 5d6, read left to right    page 2 of 45
 1632 of 7776 throws say (reroll)  this page: 1-1-5-6-1 .. 1-2-4-4-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 1-1-5-6-1  beyond      1-2-1-3-5  brown       1-2-3-1-3  cattle
 1-1-5-6-2  bicycle     1-2-1-3-6  brush       1-2-3-1-4  caught
@@ -124,6 +126,7 @@ BIP39 dice table -- throw 5d6, read left to right    page 2 of 45
 
 BIP39 dice table -- throw 5d6, read left to right    page 3 of 45
 1632 of 7776 throws say (reroll)  this page: 1-2-4-5-1 .. 1-3-3-3-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 1-2-4-5-1  clog        1-2-6-2-5  crazy       1-3-1-6-3  deliver
 1-2-4-5-2  close       1-2-6-2-6  cream       1-3-1-6-4  demand
@@ -186,6 +189,7 @@ BIP39 dice table -- throw 5d6, read left to right    page 3 of 45
 
 BIP39 dice table -- throw 5d6, read left to right    page 4 of 45
 1632 of 7776 throws say (reroll)  this page: 1-3-3-4-1 .. 1-4-2-2-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 1-3-3-4-1  donor       1-3-5-1-5  embrace     1-3-6-5-3  exist
 1-3-3-4-2  door        1-3-5-1-6  emerge      1-3-6-5-4  exit
@@ -248,6 +252,7 @@ BIP39 dice table -- throw 5d6, read left to right    page 4 of 45
 
 BIP39 dice table -- throw 5d6, read left to right    page 5 of 45
 1632 of 7776 throws say (reroll)  this page: 1-4-2-3-1 .. 1-5-1-1-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 1-4-2-3-1  finish      1-4-3-6-5  furnace     1-4-5-4-3  grain
 1-4-2-3-2  fire        1-4-3-6-6  fury        1-4-5-4-4  grant
@@ -310,6 +315,7 @@ BIP39 dice table -- throw 5d6, read left to right    page 5 of 45
 
 BIP39 dice table -- throw 5d6, read left to right    page 6 of 45
 1632 of 7776 throws say (reroll)  this page: 1-5-1-2-1 .. 1-5-5-6-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 1-5-1-2-1  holiday     1-5-2-5-5  inject      1-5-4-3-3  kitten
 1-5-1-2-2  hollow      1-5-2-5-6  injury      1-5-4-3-4  kiwi
@@ -372,6 +378,7 @@ BIP39 dice table -- throw 5d6, read left to right    page 6 of 45
 
 BIP39 dice table -- throw 5d6, read left to right    page 7 of 45
 1632 of 7776 throws say (reroll)  this page: 1-5-6-1-1 .. 1-6-4-5-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 1-5-6-1-1  little      1-6-1-4-5  mean        1-6-3-2-3  much
 1-5-6-1-2  live        1-6-1-4-6  measure     1-6-3-2-4  muffin
@@ -434,6 +441,7 @@ BIP39 dice table -- throw 5d6, read left to right    page 7 of 45
 
 BIP39 dice table -- throw 5d6, read left to right    page 8 of 45
 1632 of 7776 throws say (reroll)  this page: 1-6-4-6-1 .. 2-1-3-4-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 1-6-4-6-1  obscure     1-6-6-3-5  panel       2-1-2-1-3  plug
 1-6-4-6-2  observe     1-6-6-3-6  panic       2-1-2-1-4  plunge
@@ -496,6 +504,7 @@ BIP39 dice table -- throw 5d6, read left to right    page 8 of 45
 
 BIP39 dice table -- throw 5d6, read left to right    page 9 of 45
 1632 of 7776 throws say (reroll)  this page: 2-1-3-5-1 .. 2-2-2-3-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 2-1-3-5-1  puppy       2-1-5-2-5  relief      2-1-6-6-3  route
 2-1-3-5-2  purchase    2-1-5-2-6  rely        2-1-6-6-4  royal
@@ -558,6 +567,7 @@ BIP39 dice table -- throw 5d6, read left to right    page 9 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 10 of 45
 1632 of 7776 throws say (reroll)  this page: 2-2-2-4-1 .. 2-3-1-2-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 2-2-2-4-1  sense       2-2-4-1-5  slam        2-2-5-5-3  spoil
 2-2-2-4-2  sentence    2-2-4-1-6  sleep       2-2-5-5-4  sponsor
@@ -620,6 +630,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 10 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 11 of 45
 1632 of 7776 throws say (reroll)  this page: 2-3-1-3-1 .. 2-3-6-1-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 2-3-1-3-1  sunset      2-3-2-6-5  this        2-3-4-4-3  trend
 2-3-1-3-2  super       2-3-2-6-6  thought     2-3-4-4-4  trial
@@ -682,6 +693,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 11 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 12 of 45
 1632 of 7776 throws say (reroll)  this page: 2-3-6-2-1 .. 2-4-4-6-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 2-3-6-2-1  urban       2-4-1-5-5  walk        2-4-3-3-3  worry
 2-3-6-2-2  urge        2-4-1-5-6  wall        2-4-3-3-4  worth
@@ -744,6 +756,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 12 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 13 of 45
 1632 of 7776 throws say (reroll)  this page: 2-4-5-1-1 .. 2-5-3-5-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 2-4-5-1-1  agree       2-4-6-4-5  arrange     2-5-2-2-3  bean
 2-4-5-1-2  ahead       2-4-6-4-6  arrest      2-5-2-2-4  beauty
@@ -806,6 +819,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 13 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 14 of 45
 1632 of 7776 throws say (reroll)  this page: 2-5-3-6-1 .. 2-6-2-4-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 2-5-3-6-1  bracket     2-5-5-3-5  capital     2-6-1-1-3  citizen
 2-5-3-6-2  brain       2-5-5-3-6  captain     2-6-1-1-4  city
@@ -868,6 +882,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 14 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 15 of 45
 1632 of 7776 throws say (reroll)  this page: 2-6-2-5-1 .. 3-1-1-3-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 2-6-2-5-1  correct     2-6-4-2-5  daughter    2-6-5-6-3  disease
 2-6-2-5-2  cost        2-6-4-2-6  dawn        2-6-5-6-4  dish
@@ -930,6 +945,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 15 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 16 of 45
 1632 of 7776 throws say (reroll)  this page: 3-1-1-4-1 .. 3-1-6-2-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 3-1-1-4-1  edge        3-1-3-1-5  eternal     3-1-4-5-3  feel
 3-1-1-4-2  edit        3-1-3-1-6  ethics      3-1-4-5-4  female
@@ -992,6 +1008,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 16 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 17 of 45
 1632 of 7776 throws say (reroll)  this page: 3-1-6-3-1 .. 3-2-5-1-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 3-1-6-3-1  foster      3-2-1-6-5  globe       3-2-3-4-3  hedgehog
 3-1-6-3-2  found       3-2-1-6-6  gloom       3-2-3-4-4  height
@@ -1054,6 +1071,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 17 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 18 of 45
 1632 of 7776 throws say (reroll)  this page: 3-2-5-2-1 .. 3-3-3-6-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 3-2-5-2-1  impact      3-2-6-5-5  jungle      3-3-2-3-3  leopard
 3-2-5-2-2  impose      3-2-6-5-6  junior      3-3-2-3-4  lesson
@@ -1116,6 +1134,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 18 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 19 of 45
 1632 of 7776 throws say (reroll)  this page: 3-3-4-1-1 .. 3-4-2-5-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 3-3-4-1-1  maple       3-3-5-4-5  mom         3-4-1-2-3  noodle
 3-3-4-1-2  marble      3-3-5-4-6  moment      3-4-1-2-4  normal
@@ -1178,6 +1197,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 19 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 20 of 45
 1632 of 7776 throws say (reroll)  this page: 3-4-2-6-1 .. 3-5-1-4-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 3-4-2-6-1  outer       3-4-4-3-5  pig         3-4-6-1-3  profit
 3-4-2-6-2  output      3-4-4-3-6  pigeon      3-4-6-1-4  program
@@ -1240,6 +1260,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 20 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 21 of 45
 1632 of 7776 throws say (reroll)  this page: 3-5-1-5-1 .. 3-5-6-3-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 3-5-1-5-1  reason      3-5-3-2-5  ripple      3-5-4-6-3  screen
 3-5-1-5-2  rebel       3-5-3-2-6  risk        3-5-4-6-4  script
@@ -1302,6 +1323,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 21 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 22 of 45
 1632 of 7776 throws say (reroll)  this page: 3-5-6-4-1 .. 3-6-5-2-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 3-5-6-4-1  silver      3-6-2-1-5  source      3-6-3-5-3  struggle
 3-5-6-4-2  similar     3-6-2-1-6  south       3-6-3-5-4  student
@@ -1364,6 +1386,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 22 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 23 of 45
 1632 of 7776 throws say (reroll)  this page: 3-6-5-3-1 .. 4-1-4-1-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 3-6-5-3-1  teach       3-6-6-6-5  total       4-1-2-4-3  unfair
 3-6-5-3-2  team        3-6-6-6-6  tourist     4-1-2-4-4  unfold
@@ -1426,6 +1449,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 23 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 24 of 45
 1632 of 7776 throws say (reroll)  this page: 4-1-4-2-1 .. 4-2-2-6-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 4-1-4-2-1  violin      4-1-5-5-5  wine        4-2-1-3-3  actress
 4-1-4-2-2  virtual     4-1-5-5-6  wing        4-2-1-3-4  actual
@@ -1488,6 +1512,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 24 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 25 of 45
 1632 of 7776 throws say (reroll)  this page: 4-2-3-1-1 .. 4-3-1-5-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 4-2-3-1-1  anxiety     4-2-4-4-5  bacon       4-2-6-2-3  blush
 4-2-3-1-2  any         4-2-4-4-6  badge       4-2-6-2-4  board
@@ -1550,6 +1575,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 25 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 26 of 45
 1632 of 7776 throws say (reroll)  this page: 4-3-1-6-1 .. 4-3-6-4-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 4-3-1-6-1  cabin       4-3-3-3-5  check       4-3-5-1-3  comic
 4-3-1-6-2  cable       4-3-3-3-6  cheese      4-3-5-1-4  common
@@ -1612,6 +1638,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 26 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 27 of 45
 1632 of 7776 throws say (reroll)  this page: 4-3-6-5-1 .. 4-4-5-3-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 4-3-6-5-1  culture     4-4-2-2-5  devote      4-4-3-6-3  dune
 4-3-6-5-2  cup         4-4-2-2-6  diagram     4-4-3-6-4  during
@@ -1674,6 +1701,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 27 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 28 of 45
 1632 of 7776 throws say (reroll)  this page: 4-4-5-4-1 .. 4-5-4-2-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 4-4-5-4-1  ensure      4-5-1-1-5  family      4-5-2-5-3  flush
 4-4-5-4-2  enter       4-5-1-1-6  famous      4-5-2-5-4  fly
@@ -1736,6 +1764,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 28 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 29 of 45
 1632 of 7776 throws say (reroll)  this page: 4-5-4-3-1 .. 4-6-3-1-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 4-5-4-3-1  genre       4-5-5-6-5  hair        4-6-1-4-3  hurdle
 4-5-4-3-2  gentle      4-5-5-6-6  half        4-6-1-4-4  hurry
@@ -1798,6 +1827,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 29 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 30 of 45
 1632 of 7776 throws say (reroll)  this page: 4-6-3-2-1 .. 5-1-1-6-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 4-6-3-2-1  item        4-6-4-5-5  lawn        4-6-6-3-3  luxury
 4-6-3-2-2  ivory       4-6-4-5-6  lawsuit     4-6-6-3-4  lyrics
@@ -1860,6 +1890,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 30 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 31 of 45
 1632 of 7776 throws say (reroll)  this page: 5-1-2-1-1 .. 5-1-6-5-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 5-1-2-1-1  milk        5-1-3-4-5  need        5-1-5-2-3  only
 5-1-2-1-2  million     5-1-3-4-6  negative    5-1-5-2-4  open
@@ -1922,6 +1953,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 31 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 32 of 45
 1632 of 7776 throws say (reroll)  this page: 5-1-6-6-1 .. 5-2-5-4-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 5-1-6-6-1  pelican     5-2-2-3-5  praise      5-2-4-1-3  radio
 5-1-6-6-2  pen         5-2-2-3-6  predict     5-2-4-1-4  rail
@@ -1984,6 +2016,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 32 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 33 of 45
 1632 of 7776 throws say (reroll)  this page: 5-2-5-5-1 .. 5-3-4-3-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 5-2-5-5-1  retreat     5-3-1-2-5  satisfy     5-3-2-6-3  shoot
 5-2-5-5-2  return      5-3-1-2-6  satoshi     5-3-2-6-4  shop
@@ -2046,6 +2079,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 33 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 34 of 45
 1632 of 7776 throws say (reroll)  this page: 5-3-4-4-1 .. 5-4-3-2-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 5-3-4-4-1  soccer      5-3-6-1-5  steak       5-4-1-5-3  sword
 5-3-4-4-2  social      5-3-6-1-6  steel       5-4-1-5-4  symbol
@@ -2108,6 +2142,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 34 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 35 of 45
 1632 of 7776 throws say (reroll)  this page: 5-4-3-3-1 .. 5-5-2-1-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 5-4-3-3-1  toe         5-4-4-6-5  turn        5-4-6-4-3  velvet
 5-4-3-3-2  together    5-4-4-6-6  turtle      5-4-6-4-4  vendor
@@ -2170,6 +2205,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 35 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 36 of 45
 1632 of 7776 throws say (reroll)  this page: 5-5-2-2-1 .. 5-5-6-6-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 5-5-2-2-1  welcome     5-5-3-5-5  (reroll)    5-5-5-3-3  (reroll)
 5-5-2-2-2  west        5-5-3-5-6  (reroll)    5-5-5-3-4  (reroll)
@@ -2232,6 +2268,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 36 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 37 of 45
 1632 of 7776 throws say (reroll)  this page: 5-6-1-1-1 .. 5-6-5-5-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 5-6-1-1-1  (reroll)    5-6-2-4-5  (reroll)    5-6-4-2-3  (reroll)
 5-6-1-1-2  (reroll)    5-6-2-4-6  (reroll)    5-6-4-2-4  (reroll)
@@ -2294,6 +2331,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 37 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 38 of 45
 1632 of 7776 throws say (reroll)  this page: 5-6-5-6-1 .. 6-1-4-4-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 5-6-5-6-1  (reroll)    6-1-1-3-5  (reroll)    6-1-3-1-3  (reroll)
 5-6-5-6-2  (reroll)    6-1-1-3-6  (reroll)    6-1-3-1-4  (reroll)
@@ -2356,6 +2394,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 38 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 39 of 45
 1632 of 7776 throws say (reroll)  this page: 6-1-4-5-1 .. 6-2-3-3-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 6-1-4-5-1  (reroll)    6-1-6-2-5  (reroll)    6-2-1-6-3  (reroll)
 6-1-4-5-2  (reroll)    6-1-6-2-6  (reroll)    6-2-1-6-4  (reroll)
@@ -2418,6 +2457,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 39 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 40 of 45
 1632 of 7776 throws say (reroll)  this page: 6-2-3-4-1 .. 6-3-2-2-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 6-2-3-4-1  (reroll)    6-2-5-1-5  (reroll)    6-2-6-5-3  (reroll)
 6-2-3-4-2  (reroll)    6-2-5-1-6  (reroll)    6-2-6-5-4  (reroll)
@@ -2480,6 +2520,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 40 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 41 of 45
 1632 of 7776 throws say (reroll)  this page: 6-3-2-3-1 .. 6-4-1-1-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 6-3-2-3-1  (reroll)    6-3-3-6-5  (reroll)    6-3-5-4-3  (reroll)
 6-3-2-3-2  (reroll)    6-3-3-6-6  (reroll)    6-3-5-4-4  (reroll)
@@ -2542,6 +2583,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 41 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 42 of 45
 1632 of 7776 throws say (reroll)  this page: 6-4-1-2-1 .. 6-4-5-6-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 6-4-1-2-1  (reroll)    6-4-2-5-5  (reroll)    6-4-4-3-3  (reroll)
 6-4-1-2-2  (reroll)    6-4-2-5-6  (reroll)    6-4-4-3-4  (reroll)
@@ -2604,6 +2646,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 42 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 43 of 45
 1632 of 7776 throws say (reroll)  this page: 6-4-6-1-1 .. 6-5-4-5-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 6-4-6-1-1  (reroll)    6-5-1-4-5  (reroll)    6-5-3-2-3  (reroll)
 6-4-6-1-2  (reroll)    6-5-1-4-6  (reroll)    6-5-3-2-4  (reroll)
@@ -2666,6 +2709,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 43 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 44 of 45
 1632 of 7776 throws say (reroll)  this page: 6-5-4-6-1 .. 6-6-3-4-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 6-5-4-6-1  (reroll)    6-5-6-3-5  (reroll)    6-6-2-1-3  (reroll)
 6-5-4-6-2  (reroll)    6-5-6-3-6  (reroll)    6-6-2-1-4  (reroll)
@@ -2728,6 +2772,7 @@ BIP39 dice table -- throw 5d6, read left to right   page 44 of 45
 
 BIP39 dice table -- throw 5d6, read left to right   page 45 of 45
 1632 of 7776 throws say (reroll)  this page: 6-6-3-5-1 .. 6-6-6-6-6
+*** NEVER enter a seed on an online device -- air-gapped only ***
 
 6-6-3-5-1  (reroll)    6-6-4-5-5  (reroll)    6-6-5-6-3  (reroll)
 6-6-3-5-2  (reroll)    6-6-4-5-6  (reroll)    6-6-5-6-4  (reroll)
