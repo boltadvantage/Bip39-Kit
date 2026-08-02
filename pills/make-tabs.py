@@ -35,10 +35,15 @@ import sys
 import zipfile
 
 # ---- geometry, millimetres -------------------------------------------------
-DIAM        = 16.0     # tab diameter
-THICK       = 2.0      # tab thickness: rigid enough not to bend, thin enough to be cheap
+# Pill shape: a rectangle with semicircular ends, sized around the four-digit
+# text block. A disc has to circumscribe that block and wastes its corners --
+# 201 mm2 versus 124 mm2 for the same text, so the pill uses 39% less material
+# and its flat sides pack roughly twice as densely on the plate.
+PILL_L      = 17.2     # overall length
+PILL_H      = 8.0      # overall height, so the end caps have r = 4.0
+THICK       = 2.0      # thickness: rigid enough not to bend, thin enough to be cheap
 DIGIT_DEPTH = 0.6      # top layers that change colour (3 layers at 0.2mm)
-SEG_N       = 32       # facets around the disc
+SEG_N       = 32       # facets; half of this per end cap
 
 # Stroke is 0.8 mm = exactly two 0.4 mm extrusions, so segments print as clean
 # double walls on any slicer rather than relying on variable-width extrusion.
@@ -47,11 +52,11 @@ SEG_N       = 32       # facets around the disc
 DW, DH, DS  = 3.0, 5.0, 0.8     # digit width, height, stroke thickness
 DGAP        = 0.6               # space between digits
 
-# 12 x 12 at 19 mm pitch is 228 x 228 mm, which sits inside a Bambu P1S/X1
-# (256 x 256) with ~14 mm of margin all round. Drop to 8 x 8 for a 220 mm bed
-# such as an Ender or Prusa MK-series.
-COLS, ROWS  = 12, 12            # tabs per plate
-PITCH       = 19.0              # centre-to-centre spacing
+# 12 x 24 at these pitches is 230 x 228 mm, inside a Bambu P1S/X1 (256 x 256)
+# with ~13 mm of margin all round. Shrink COLS/ROWS for a smaller bed.
+COLS, ROWS      = 12, 24        # pills per plate
+PITCH_X         = 19.2          # 2.0 mm between pills lengthwise
+PITCH_Y         = 9.5           # 1.5 mm between rows
 SEED        = 20260802
 
 COLOR_BASE   = "#2E4A62FF"
@@ -87,6 +92,36 @@ class Mesh:
                         (2, 3, 7), (2, 7, 6),      # +y
                         (3, 0, 4), (3, 4, 7)):     # -x
             self.t.append((i[a], i[b], i[c]))
+
+    def stadium(self, cx, cy, length, height, z0, z1, n=SEG_N // 2):
+        """
+        A pill: straight sides with semicircular caps, extruded.
+
+        Hugs a four-digit text block far more closely than a disc, which has to
+        circumscribe it and wastes the corners -- about 39% less material, and
+        the flat sides pack far tighter on the plate.
+        """
+        r = height / 2.0
+        straight = length - height
+        pts = []
+        for k in range(n + 1):                       # right cap, -90 -> +90
+            a = -math.pi / 2 + math.pi * k / n
+            pts.append((cx + straight / 2 + r * math.cos(a), cy + r * math.sin(a)))
+        for k in range(n + 1):                       # left cap, +90 -> +270
+            a = math.pi / 2 + math.pi * k / n
+            pts.append((cx - straight / 2 + r * math.cos(a), cy + r * math.sin(a)))
+
+        bc = self._add((cx, cy, z0))
+        tc = self._add((cx, cy, z1))
+        rb = [self._add((x, y, z0)) for x, y in pts]
+        rt = [self._add((x, y, z1)) for x, y in pts]
+        m = len(pts)
+        for k in range(m):
+            j = (k + 1) % m
+            self.t.append((bc, rb[j], rb[k]))          # bottom, faces -z
+            self.t.append((tc, rt[k], rt[j]))          # top, faces +z
+            self.t.append((rb[k], rb[j], rt[j]))       # wall
+            self.t.append((rb[k], rt[j], rt[k]))
 
     def cylinder(self, cx, cy, r, z0, z1, n=SEG_N):
         bc = self._add((cx, cy, z0))
@@ -223,9 +258,9 @@ def main():
 
         base, digits = Mesh(), Mesh()
         for slot, value in enumerate(chunk):
-            cx = (slot % COLS) * PITCH + PITCH / 2
-            cy = (slot // COLS) * PITCH + PITCH / 2
-            base.cylinder(cx, cy, DIAM / 2, 0.0, THICK)
+            cx = (slot % COLS) * PITCH_X + PITCH_X / 2
+            cy = (slot // COLS) * PITCH_Y + PITCH_Y / 2
+            base.stadium(cx, cy, PILL_L, PILL_H, 0.0, THICK)
             number(digits, value, cx, cy, THICK - DIGIT_DEPTH, THICK)
             manifest.append((p + 1, slot + 1, value))
 
