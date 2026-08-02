@@ -41,20 +41,31 @@ The 3MF is deliberately plain — no embedded materials or colour metadata, sinc
 that is the least portable corner of the format and slicers disagree about it.
 Assigning two filaments by hand is one click and always works.
 
-### If the 3MF won't import
+### STL — use these if the 3MF won't import
 
-Generate STLs instead. They are not committed here because binary STL is roughly
-eight times the size of the compressed 3MF (~37 MB for the full set), but the
-generator will write them on demand:
+**Bambu Studio has been seen to reject the 3MF files.** Both formats are shipped;
+if the 3MF gives you trouble, use the STL pair and don't think about it further:
 
 ```
-./make-tabs.py --stl          # every plate, 3MF + two STLs each
-./make-tabs.py 1 --stl        # just plate 1
+tabs-plate-01-base.stl      the discs
+tabs-plate-01-digits.stl    the numerals
 ```
 
-That gives `tabs-plate-01-base.stl` and `tabs-plate-01-digits.stl`. Import both,
-**do not move either**, and assign the digits file to your second filament. They
-share an origin, so they line up as long as nothing gets dragged or auto-arranged.
+Import **both**, **do not move either one**, and assign the digits file to your
+second filament. They share an origin, so they land aligned — but auto-arrange
+or a stray drag will separate them and the digits will end up beside the tabs
+instead of inside them.
+
+STL is bulkier than 3MF (about 8× — 37 MB for the full set) which is why the 3MF
+files are still here, but STL is read correctly by every slicer ever written.
+
+Regenerate either format with:
+
+```
+./make-tabs.py            # 3MF only
+./make-tabs.py --stl      # both
+./make-tabs.py 1 --stl    # just plate 1
+```
 
 > ### ⚠️ Do not use Auto Arrange
 > The two bodies are aligned by their coordinates, nothing else. Auto-arrange
